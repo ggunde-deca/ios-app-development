@@ -11,21 +11,28 @@ struct Page2View: View {
     @Binding var text3: String
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-                .scaledToFit()
-            AsyncImage(url: URL(string: text3)) { image in
-                image.resizable()
+        NavigationStack {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
                     .scaledToFit()
-                    .frame(width: 600, height: 300)
-            } placeholder: {
-                ProgressView()
+                AsyncImage(url: URL(string: text3)) { image in
+                    image.resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 150)
+                } placeholder: {
+                    ProgressView()
+                }
+                Text("Received from Page 1 \(text3)")
+                NavigationLink(destination: Page3View(text4: $text3)) {
+                    Label("Enlarge Image", systemImage: "rectangle.portrait.and.arrow.forward")
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                }
             }
-            Text("Received from Page 1 \(text3)")
+            .padding()
         }
-        .padding()
     }
 }
 

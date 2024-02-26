@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		459ABB1F2B8D0DA100F436B1 /* Page3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459ABB1E2B8D0DA100F436B1 /* Page3View.swift */; };
 		DF4657082B8A298B0070E31A /* passingdataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4657072B8A298B0070E31A /* passingdataApp.swift */; };
 		DF46570A2B8A298B0070E31A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4657092B8A298B0070E31A /* ContentView.swift */; };
 		DF46570C2B8A298C0070E31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF46570B2B8A298C0070E31A /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		459ABB1E2B8D0DA100F436B1 /* Page3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3View.swift; sourceTree = "<group>"; };
 		DF4657042B8A298B0070E31A /* passingdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passingdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4657072B8A298B0070E31A /* passingdataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passingdataApp.swift; sourceTree = "<group>"; };
 		DF4657092B8A298B0070E31A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				DF4657072B8A298B0070E31A /* passingdataApp.swift */,
 				DF4657092B8A298B0070E31A /* ContentView.swift */,
 				DF4657342B8A39AF0070E31A /* Page2View.swift */,
+				459ABB1E2B8D0DA100F436B1 /* Page3View.swift */,
 				DF46570B2B8A298C0070E31A /* Assets.xcassets */,
 				DF46570D2B8A298C0070E31A /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF46570A2B8A298B0070E31A /* ContentView.swift in Sources */,
+				459ABB1F2B8D0DA100F436B1 /* Page3View.swift in Sources */,
 				DF4657082B8A298B0070E31A /* passingdataApp.swift in Sources */,
 				DF4657352B8A39AF0070E31A /* Page2View.swift in Sources */,
 			);
