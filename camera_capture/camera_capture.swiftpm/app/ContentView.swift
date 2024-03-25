@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  ImageToText
 //
-//  Created by Harnoor Singh on 3/10/24.
 //
 
 import SwiftUI

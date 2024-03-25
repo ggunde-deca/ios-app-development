@@ -11,7 +11,6 @@ struct CameraView: View {
     
     
     var body: some View {
-        
         NavigationStack {
             GeometryReader { geometry in
                 ViewfinderView(image:  $model.viewfinderImage )
@@ -36,8 +35,6 @@ struct CameraView: View {
             }
             .task {
                 await model.camera.start()
-                await model.loadPhotos()
-                await model.loadThumbnail()
             }
             .navigationTitle("Camera")
             .navigationBarTitleDisplayMode(.inline)
@@ -51,7 +48,6 @@ struct CameraView: View {
         HStack(spacing: 60) {
             
             Spacer()
-            
             
             NavigationLink(destination: ContentView(thumbnail: $model.thumbnailImage, thumbnailCGImage: $model.thumbnailCGImage)) {
                 Label {
@@ -67,7 +63,6 @@ struct CameraView: View {
                     }
                 }
             }.simultaneousGesture(TapGesture().onEnded {
-                print("Hello world!");
                 model.camera.takePhoto();
             })
             
