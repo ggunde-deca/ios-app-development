@@ -46,6 +46,7 @@ struct Page2View: View {
                     } onIncrement: {
                         Task {
                             await incrementStep(inventory_obj: inventory)
+                            sleep(1) // To make sure network calls do not have race conditions
                             do {
                                 response = try await viewModel.getResponseFromServer() // todo pass text3
                                 inventories = response
@@ -61,6 +62,7 @@ struct Page2View: View {
                     } onDecrement: {
                         Task {
                             await decrementStep(inventory_obj: inventory)
+                            sleep(1) // To make sure network calls do not have race conditions
                             do {
                                 response = try await viewModel.getResponseFromServer() // todo pass text3
                                 inventories = response
